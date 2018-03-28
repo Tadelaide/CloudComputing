@@ -24,7 +24,7 @@
     font-size: 24px;
     padding: 20px;
     box-shadow: 1px 1px 1px 1px #848484;
-    background: wheat;
+    background: #CCFF99;
 }
 
 
@@ -50,7 +50,7 @@ article {
     margin:  10px;
   }
 
-  .grid-area_area_tittle{
+  .grid-area_tittle{
     grid-row: 1; 
     grid-column: 2 / span 2; 
 }
@@ -98,7 +98,7 @@ article {
   /*nav part*/
   nav{
     display: block;
-    background: #333;
+    background: #333333;
     position: relative;
     height: 50px;
     box-shadow: 1px 1px 1px 1px #848484;
@@ -117,7 +117,7 @@ article {
   }
   nav ul li{
     float: left;
-    width: 15%;
+
     text-align: center;
     padding:15px;
    
@@ -138,7 +138,7 @@ article {
 
  /* intro part */
   .intro{
-     background:  yellowgreen;
+     background:  #99cc33;
      display:block;
      box-shadow: 1px 1px 1px 1px #848484
  }
@@ -163,7 +163,7 @@ article {
  
   /*footer part*/
    footer {
-       background: black;
+       background: #336699;
        color: white;
        text-align: center;
        width: 100%;
@@ -172,6 +172,67 @@ article {
        font-size: 15px;
        box-shadow: 1px 1px 1px 1px #848484
    }
+
+   .login{
+    background: white;
+    box-shadow: 1px 1px 1px 1px #848484;
+    display: grid; 
+    grid-template-rows: repeat(6, min-content); 
+
+    position: relative; 
+
+    background-color: white;
+    margin:  10px;
+    padding: 15px;
+
+
+   }
+   .login-img{
+    grid-row: 1;
+    margin: auto auto; 
+    }
+    .login img{
+        width: 300px;
+        padding: 20px;
+    }
+    .login-username{
+        grid-row: 2; 
+        margin: auto auto;  
+        padding: 10px;
+    }
+    .login-password{
+        grid-row: 3; 
+        margin: auto auto;  
+        padding: 10px;
+    }
+    .login-valid{
+        grid-row: 4; 
+        margin: auto auto;
+        padding: 10 10px 5px 10px;
+
+        }
+    .login-validimg{
+        grid-row: 5;
+        margin: auto auto; 
+        padding: 0 10px 10px 10px;
+        }
+    .login-button{
+        grid-row: 6; 
+        margin: auto auto; 
+        padding: 10px;
+        }
+    .login input{
+
+        width: 300px;
+        height: 40px;
+        text-align: center;
+    }
+    .login #code{
+        width: 150px;
+    }
+
+
+   
    
    @media only screen and (min-width : 768px) 
    { 
@@ -209,7 +270,79 @@ article {
        { 
            flex-direction: row;
         } 
-   }
+   
+        .login{
+            background: white;
+            box-shadow: 1px 1px 1px 1px #848484;
+            display: grid; 
+            grid-template-rows: repeat(5, min-content); 
+            grid-template-columns: 66% calc(33%- 50px) 50px; 
+            grid-auto-rows: min-content; 
+        
+            
+            position: relative; 
+            padding: 15px 10px; 
+            background-color: white;
+            margin:  10px;
+            padding: 15px;
+        
+        
+           }
+           .login-img{
+            grid-row: 1 / span 5; 
+            grid-column: 1 / span 1; 
+            margin: auto auto;
+        
+            }
+            .login img{
+                width: 300px;
+                padding: 20px;
+            }
+            .login-username{
+                width: auto;
+                grid-row: 1;  
+                grid-column: 2; 
+                margin: auto 0;
+        
+        
+            }
+            .login-password{
+                grid-row: 2;  
+                grid-column: 2; 
+                margin: auto 0;
+        
+            }
+            .login-valid{
+                grid-row: 3; 
+                grid-column: 2;
+                margin: auto 0; 
+        
+                }
+            .login-validimg{
+                grid-row: 4;
+                grid-column: 2;
+                margin: 0;
+                
+        
+         
+                }
+            .login-button{
+                grid-row: 5; 
+                grid-column: 2; 
+                margin: 20px 0;
+        
+                }
+            .login input{
+                width: 66%;
+                height: 40px;
+                text-align: center;
+            }
+            .login #code{
+                width: 66%;
+            }
+
+}
+
    @media only screen and  (max-width : 533px)
    { 
        /* main 

@@ -1,0 +1,62 @@
+<html>  
+    <head>  
+            <title>Sheffield CouldBase</title>
+            <link rel="stylesheet" href="index.css"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <style type="text/css">  
+            #code  
+            {  
+                font-family:Arial;  
+                font-style:italic;  
+                font-weight:bold;  
+                border:0;  
+                letter-spacing:2px;  
+                color:blue;
+                width: 150px;  
+            }  
+        </style>  
+        <script type = "text/javascript" src = "checkCode.js">  
+        </script>  
+    </head>  
+    <body>
+              <!--new start-->
+      <header role="banner">
+            <nav role="navigation">
+                <ul>
+                    <li ><a href="#" target="_blank">Home</a></li>
+                    <li class="current"><a href="#" target="_blank">login</a></li>
+                    <li><a href="#" target="_blank">Peanut</a></li>
+                    <li><a href="#" target="_blank">About</a></li>
+                    <li><a href="#" target="_blank">Upload</a></li>
+                </ul>
+            </nav>
+     </header>
+     <div class="intro">
+         <div class="introItem">
+         <div class = "introPhoto">
+             <a href="#"><img src="CloudComputing.png" alt="Cloud Computing" height="100px"></a>
+         </div>
+         <div class="introDescription">
+             <h2>Sheffield CloudBase(PaaS)</h2>
+             By Team 12
+         </div>
+     </div>
+    </div>  
+     <div class="subtitle">
+            <p>Application Tray</p>
+    </div>
+
+        <div class="login">
+            <div class="login-img"><img src="CloudComputing.png" alt="it is a image"></div>  
+            <div class="login-username"><input type="txt" placeholder="Username" ></div>
+            <div class="login-password"><input type="password" placeholder="Password" ></div>
+            <div class="login-valid"><input type = "text" id = "input"placeholder="valid"/> </div>
+            <div class="login-validimg"><input type = "button" id="code" onclick="createCode()"/></div>  
+            <div class="login-button"><input type = "button" id="loginButton" value = "login" onclick = "validate()"/></div>  
+        </div>
+ 
+        <footer>
+                Produced by-Team 12 | Contact: wangletian0131@hotmail.com
+            </footer>
+    </body>  
+</html>  
